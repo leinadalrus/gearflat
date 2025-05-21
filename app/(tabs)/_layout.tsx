@@ -32,25 +32,37 @@ export default function TabLayout() {
                 options={{
                     title: 'yours',
                     tabBarIcon: ({ color }) => (
-                        <IconSymbol size={28} name="house.fill" color={color} />
+                        <IconSymbol
+                            size={28}
+                            name="square.on.square"
+                            color={color}
+                        />
                     )
                 }}
             />
             <Tabs.Screen
-                name="album"
+                name="comm"
                 options={{
                     title: "else's",
                     tabBarIcon: ({ color }) => (
-                        <IconSymbol size={28} name="rectangle.3.group.bubble.fill" color={color} />
+                        <IconSymbol
+                            size={28}
+                            name="square.righthalf.fill"
+                            color={color}
+                        />
                     )
                 }}
             />
             <Tabs.Screen
-                name="extra"
+                name="misc"
                 options={{
-                    title: "misc.",
+                    title: 'misc.',
                     tabBarIcon: ({ color }) => (
-                        <IconSymbol size={28} name="asterisk.circle.fill" color={color} />
+                        <IconSymbol
+                            size={28}
+                            name="fish.fill"
+                            color={color}
+                        />
                     )
                 }}
             />

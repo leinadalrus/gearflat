@@ -10,7 +10,7 @@ const ExtraScreen = () => {
             headerBackgroundColor={{ light: '#fafef9', dark: '#010401' }}
             headerImage={
                 <Image
-                    source={require('@/assets/images/favicon.png')}
+                    source={require('@/assets/images/partial-react-logo.png')}
                     style={styles.logo}
                 />
             }
@@ -46,8 +46,10 @@ const styles = StyleSheet.create({
         gap: 1
     },
     logo: {
-        height: 252,
-        width: 252,
+        height: 24,
+        width: 24,
+        padding: 4,
+        margin: 4,
         bottom: 0,
         left: 0,
         position: 'absolute'
