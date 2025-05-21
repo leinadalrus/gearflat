@@ -1,12 +1,10 @@
 import { Image } from 'expo-image'
 import { StyleSheet } from 'react-native'
 
-import Card from '@/components/Card'
-import CardView from '@/components/CardView'
 import ParallaxScrollView from '@/components/ParallaxScrollView'
 import { ThemedView } from '@/components/ThemedView'
 
-const HomeScreen = () => {
+const ExtraScreen = () => {
     return (
         <ParallaxScrollView
             headerBackgroundColor={{ light: '#fafef9', dark: '#010401' }}
@@ -17,11 +15,7 @@ const HomeScreen = () => {
                 />
             }
         >
-            <ThemedView style={styles.container}>
-                <CardView style={styles.cardContainer}>
-                    <Card />
-                </CardView>
-            </ThemedView>
+            <ThemedView style={styles.container}></ThemedView>
         </ParallaxScrollView>
     )
 }
@@ -60,4 +54,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default HomeScreen
+export default ExtraScreen
